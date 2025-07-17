@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sytle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -15,17 +15,17 @@
     <header>
         <div class="interface">
             <div class="logo">
-                <a href="#">
-                    <img src="images/logo.png" alt="">
+                <a href="index.html">
+                    <i class="bi bi-person-arms-up"></i>
                 </a>
             </div>
 
             <nav class="menu-desktop">
                 <ul>
-                    <li><a href="">Início</a></li>
-                    <li><a href="">Especialidades</a></li>
-                    <li><a href="">Sobre</a></li>
-                    <li><a href="">Projetos</a></li>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formulario">Fale comigo</a></li>
                 </ul>
             </nav>
             <div class="btn-contato">
@@ -54,14 +54,14 @@
                 </div>
                 
                 <div class="img-topo-site">
-                    <img src="images/pessoa.png" alt="">
+                    <img src="images/Software engineer.gif" alt="">
                 </div>
                </div>
             </div>
 
         </section>
 
-        <section class="especialidades">
+        <section class="especialidades" id="especialidades">
             <div class="interface">
                 <h2 class="titulo">Minhas <span>Especialidades</span></h2>
                 <div class="flex">
@@ -86,7 +86,62 @@
                 </div>
             </div>
         </section>
+
+        <section class="sobre" id="sobre">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-sobre">
+                        <img src="images/Webinar.gif" alt="">
+                    </div>
+                    <div class="txt-sobre">
+                        <h2>Muito prazer, <span>sou Nicolas Pinheiro</span></h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et provident facilis, assumenda obcaecati dicta beatae quos non praesentium quas, rem repudiandae hic fuga perferendis laboriosam incidunt, suscipit ipsam recusandae earum!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos molestiae, sunt adipisci atque quisquam ad voluptatibus, impedit tempora, officia animi laborum distinctio nobis nostrum totam inventore placeat nisi? Dolorum.</p>
+                        <div class="btn-social">
+                            <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href=""><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="formulario">
+            <div class="interface">
+                <h2 class="titulo">Fale <span>comigo.</span></h2>
+
+                <form method="post" action="envia.php">
+                    <input type="text" name="nome" id="" placeholder="Seu nome completo" required>
+                    <input type="text" name="email" id="" placeholder="Seu Email" required>
+                    <input type="text" name="telefone" id="" placeholder="Seu celular">
+                    <textarea name="mensagem" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar"><input type="submit" name="btn-enviar" value="Enviar"></div>
+                </form>
+            </div>
+        </section>
     </main>
+
+    <footer>
+        <div class="interface">
+            
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo">
+                        <a href="menu-desktop"><i class="bi bi-person-arms-up"></i></a>
+                    </div>
+                    <div class="btn-social">
+                        <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
+                        <a href=""><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href=""><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-at"></i><a href="mailto:nicolasdelimapinheiro@gmail.com">nicolasdelimapinheiro@gmail.com</a></p>
+            </div>
+        </div>
+    </footer>
 
 </body>
 </html>
