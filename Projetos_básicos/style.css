@@ -61,6 +61,7 @@ header nav.menu-desktop ul li{
 .btn-abrir-menu i{
     color: #3d96de;
     font-size: 40px;
+    display: none;
 }
 
 .overlay-menu{
@@ -85,6 +86,7 @@ header nav.menu-desktop ul li{
     width: 0%;
     overflow: hidden;
     transition: .4s;
+    display: none;
 }
 
 .menu-mobile.abrir-menu{
@@ -368,6 +370,14 @@ footer .line-footer p a{
 @media screen and (max-width: 1020px){
     .menu-desktop, .btn-contato{
         display: none;
+    }
+
+    .btn-abrir-menu i{
+        display: block;
+    }
+
+    .menu-mobile{
+        display: block;
     }
 
     .flex{
