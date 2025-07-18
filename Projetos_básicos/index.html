@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<script src="menu.js" defer></script>
     <title>Meu Portifólio</title>
 </head>
 <body>
@@ -29,10 +30,30 @@
                 </ul>
             </nav>
             <div class="btn-contato">
-                <a href="#">
+                <a href="#formulario">
                     <button>Contato</button>
                 </a>
             </div>
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="#especialidades">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#formulario">Fale comigo</a></li>
+                    <li><a href="">Contato</a></li>
+                </ul>
+            </nav>
+            </div>
+            <div class="overlay-menu" id="overlay-menu"></div>
         </div>
     </header>
 
@@ -41,13 +62,11 @@
             <div class="interface">
                <div class="flex">
                 <div class="txt-topo-site">
-                    <h1>Transformando Ideias em Realidade Digital<span>.</span></h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta cum, excepturi 
-                        ratione iusto in nisi voluptatem! Autem quam illo beatae eaque repellendu
-                        s, laudantium obcaecati. Tenetur quas iusto eius sit commodi.</p>
+                    <h1>Primeiros passos, grandes sonhos<span>.</span></h1>
+                    <p>Este portfólio representa o começo da minha jornada como desenvolvedor, com paixão, aprendizado e muita vontade de evoluir a cada linha de código.</p>
 
                     <div class="btn-contato">
-                    <a href="#">
+                    <a href="#formulario">
                         <button>Entre em contato</button>
                     </a>
                 </div>    
@@ -68,19 +87,19 @@
                     <div class="especialidades-box">
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus aspernatur commodi voluptas explicabo. Eos quis laudantium laboriosam? Fugit, eius. Enim eum magni voluptatem ad modi, aliquam numquam asperiores pariatur.</p>
+                        <p>Criação de sites completos, modernos e responsivos, com foco na experiência do usuário. Estruturo páginas que funcionam bem em todos os dispositivos.</p>
                         
                     </div>
                     <div class="especialidades-box">
                         <i class="bi bi-cart"></i>
                         <h3>Landing Page</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus aspernatur commodi voluptas explicabo. Eos quis laudantium laboriosam? Fugit, eius. Enim eum magni voluptatem ad modi, aliquam numquam asperiores pariatur.</p>
+                        <p>Desenvolvo landing pages objetivas e atrativas, ideais para apresentar produtos, serviços ou captar leads de forma eficaz</p>
 
                     </div>
                     <div class="especialidades-box">
                         <i class="bi bi-filetype-py"></i>
                         <h3>Python</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt natus aspernatur commodi voluptas explicabo. Eos quis laudantium laboriosam? Fugit, eius. Enim eum magni voluptatem ad modi, aliquam numquam asperiores pariatur.</p>
+                        <p>Conhecimento intermediário em Python, com foco em lógica de programação e automações. Ainda sem projetos prontos, mas em constante evolução e prática.</p>
 
                     </div>
                 </div>
@@ -95,12 +114,12 @@
                     </div>
                     <div class="txt-sobre">
                         <h2>Muito prazer, <span>sou Nicolas Pinheiro</span></h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et provident facilis, assumenda obcaecati dicta beatae quos non praesentium quas, rem repudiandae hic fuga perferendis laboriosam incidunt, suscipit ipsam recusandae earum!</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eos molestiae, sunt adipisci atque quisquam ad voluptatibus, impedit tempora, officia animi laborum distinctio nobis nostrum totam inventore placeat nisi? Dolorum.</p>
+                        <p>Sou estudante de Análise e Desenvolvimento de Sistemas e tenho paixão por tecnologia desde cedo. Já participei de projetos acadêmicos focados em front-end, desenvolvendo interfaces e landing pages funcionais que me ajudaram a aplicar na prática o que aprendi na teoria. Tenho interesse tanto na parte visual quanto na lógica por trás dos sistemas, e por isso gosto de explorar as áreas de front-end e back-end.</p>
+                        <p>Atualmente, estou estudando Python, me aprofundando em lógica de programação, automações e conceitos mais avançados da linguagem. Sou curioso, proativo e vejo a programação como uma ferramenta poderosa para resolver problemas e criar soluções que impactam a vida das pessoas. Estou sempre em busca de novos aprendizados para crescer como desenvolvedor.</p>
                         <div class="btn-social">
-                            <a href=""><button><i class="bi bi-whatsapp"></i></button></a>
-                            <a href=""><button><i class="bi bi-linkedin"></i></button></a>
-                            <a href=""><button><i class="bi bi-github"></i></button></a>
+                            <a href="https://wa.me/5511947669587"><button><i class="bi bi-whatsapp"></i></button></a>
+                            <a href="https://www.linkedin.com/in/nicolas-pinheiro-596b97298/"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://github.com/nicolaspinheiro1"><button><i class="bi bi-github"></i></button></a>
                         </div>
                     </div>
                 </div>
@@ -137,8 +156,8 @@
                     </div>
                 </div>
             </div>
-            <div class="line-footer borda">
-                <p><i class="bi bi-envelope-at"></i><a href="mailto:nicolasdelimapinheiro@gmail.com">nicolasdelimapinheiro@gmail.com</a></p>
+            <div class="line-footer">
+                <p><a href="mailto:nicolasdelimapinheiro@gmail.com">nicolasdelimapinheiro@gmail.com</a></p>
             </div>
         </div>
     </footer>
